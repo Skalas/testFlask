@@ -1,0 +1,6 @@
+select
+  {{ columnas |join(', ') }}
+  from flights
+ where
+month={{ mes }}
+   and day={{dia}}
